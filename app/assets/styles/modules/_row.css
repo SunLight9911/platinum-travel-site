@@ -1,12 +1,18 @@
 .row{
     @mixin atClearfix;
-    
+    &--t-padding{
+        padding-top:80px;
+    }
     &--getters{
         margin-right:-65px;
     }
     &--gutters > div{
         padding-right:65px;
     }
+    &--gutters-small{
+        margin-right:-45px;
+    }
+    &--gutters-small >div{padding-right:45px}
   
     &--gutters-large{
         margin-right:-120px;
@@ -41,5 +47,42 @@
         float:left;
         width: 63%;
     }
+  }
+  &--equil-h-at-medium{
+      @mixin atMedium{
+          display:flex;
+      }
+      & >div{
+          float:left;
+          display:flex;
+      }
+      &__large-4 {
+        float:left;
+        width: 33.33%;  
+    }
+    &__large-4--larger{
+        width:37%;
+    }
+    &__large-6{
+        float:left;
+        width:50%;
+    }
+    &__large-8{
+        float:left;
+        width: 66.66%;
+    }
+    &__large-8--smaller{
+        float:left;
+        width: 63%;
+    }
+  }
+  &--equil-h-at-large{
+      @mixin atLarge{
+          display:flex;
+      }
+      & >div{
+          float:left;
+          display:flex;
+      }
   }
 }
