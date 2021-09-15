@@ -1,4 +1,4 @@
-import "../styles/style.css"
-/* if(module.hot){
-    module.hot.accept();
-} */
+import "../styles/style.css";
+import MobileMenu from "./modules/MobileMenu";
+
+let mobileMenu = new MobileMenu();
